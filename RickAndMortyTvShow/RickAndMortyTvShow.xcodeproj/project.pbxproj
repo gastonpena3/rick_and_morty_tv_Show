@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3F9A3392AB525E2001264AC /* RickAndMortyTvShowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3382AB525E2001264AC /* RickAndMortyTvShowApp.swift */; };
+		D3F9A33B2AB525E2001264AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A33A2AB525E2001264AC /* ContentView.swift */; };
+		D3F9A33D2AB525E4001264AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F9A33C2AB525E4001264AC /* Assets.xcassets */; };
+		D3F9A3402AB525E4001264AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F9A33F2AB525E4001264AC /* Preview Assets.xcassets */; };
+		D3F9A3422AB525E4001264AC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3412AB525E4001264AC /* Persistence.swift */; };
+		D3F9A3452AB525E4001264AC /* RickAndMortyTvShow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3432AB525E4001264AC /* RickAndMortyTvShow.xcdatamodeld */; };
+		D3F9A34F2AB525E4001264AC /* RickAndMortyTvShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A34E2AB525E4001264AC /* RickAndMortyTvShowTests.swift */; };
+		D3F9A3592AB525E4001264AC /* RickAndMortyTvShowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3582AB525E4001264AC /* RickAndMortyTvShowUITests.swift */; };
+		D3F9A35B2AB525E4001264AC /* RickAndMortyTvShowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A35A2AB525E4001264AC /* RickAndMortyTvShowUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3F9A34B2AB525E4001264AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3F9A32D2AB525E2001264AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3F9A3342AB525E2001264AC;
+			remoteInfo = RickAndMortyTvShow;
+		};
+		D3F9A3552AB525E4001264AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3F9A32D2AB525E2001264AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3F9A3342AB525E2001264AC;
+			remoteInfo = RickAndMortyTvShow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3F9A3352AB525E2001264AC /* RickAndMortyTvShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyTvShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F9A3382AB525E2001264AC /* RickAndMortyTvShowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTvShowApp.swift; sourceTree = "<group>"; };
+		D3F9A33A2AB525E2001264AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D3F9A33C2AB525E4001264AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3F9A33F2AB525E4001264AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3F9A3412AB525E4001264AC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D3F9A3442AB525E4001264AC /* RickAndMortyTvShow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RickAndMortyTvShow.xcdatamodel; sourceTree = "<group>"; };
+		D3F9A34A2AB525E4001264AC /* RickAndMortyTvShowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyTvShowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F9A34E2AB525E4001264AC /* RickAndMortyTvShowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTvShowTests.swift; sourceTree = "<group>"; };
+		D3F9A3542AB525E4001264AC /* RickAndMortyTvShowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyTvShowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F9A3582AB525E4001264AC /* RickAndMortyTvShowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTvShowUITests.swift; sourceTree = "<group>"; };
+		D3F9A35A2AB525E4001264AC /* RickAndMortyTvShowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTvShowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3F9A3322AB525E2001264AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F9A3472AB525E4001264AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F9A3512AB525E4001264AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3F9A32C2AB525E2001264AC = {
+			isa = PBXGroup;
+			children = (
+				D3F9A3372AB525E2001264AC /* RickAndMortyTvShow */,
+				D3F9A34D2AB525E4001264AC /* RickAndMortyTvShowTests */,
+				D3F9A3572AB525E4001264AC /* RickAndMortyTvShowUITests */,
+				D3F9A3362AB525E2001264AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3F9A3362AB525E2001264AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9A3352AB525E2001264AC /* RickAndMortyTvShow.app */,
+				D3F9A34A2AB525E4001264AC /* RickAndMortyTvShowTests.xctest */,
+				D3F9A3542AB525E4001264AC /* RickAndMortyTvShowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3F9A3372AB525E2001264AC /* RickAndMortyTvShow */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9A3382AB525E2001264AC /* RickAndMortyTvShowApp.swift */,
+				D3F9A33A2AB525E2001264AC /* ContentView.swift */,
+				D3F9A33C2AB525E4001264AC /* Assets.xcassets */,
+				D3F9A3412AB525E4001264AC /* Persistence.swift */,
+				D3F9A3432AB525E4001264AC /* RickAndMortyTvShow.xcdatamodeld */,
+				D3F9A33E2AB525E4001264AC /* Preview Content */,
+			);
+			path = RickAndMortyTvShow;
+			sourceTree = "<group>";
+		};
+		D3F9A33E2AB525E4001264AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9A33F2AB525E4001264AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3F9A34D2AB525E4001264AC /* RickAndMortyTvShowTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9A34E2AB525E4001264AC /* RickAndMortyTvShowTests.swift */,
+			);
+			path = RickAndMortyTvShowTests;
+			sourceTree = "<group>";
+		};
+		D3F9A3572AB525E4001264AC /* RickAndMortyTvShowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9A3582AB525E4001264AC /* RickAndMortyTvShowUITests.swift */,
+				D3F9A35A2AB525E4001264AC /* RickAndMortyTvShowUITestsLaunchTests.swift */,
+			);
+			path = RickAndMortyTvShowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3F9A3342AB525E2001264AC /* RickAndMortyTvShow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F9A35E2AB525E4001264AC /* Build configuration list for PBXNativeTarget "RickAndMortyTvShow" */;
+			buildPhases = (
+				D3F9A3312AB525E2001264AC /* Sources */,
+				D3F9A3322AB525E2001264AC /* Frameworks */,
+				D3F9A3332AB525E2001264AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RickAndMortyTvShow;
+			productName = RickAndMortyTvShow;
+			productReference = D3F9A3352AB525E2001264AC /* RickAndMortyTvShow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3F9A3492AB525E4001264AC /* RickAndMortyTvShowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F9A3612AB525E4001264AC /* Build configuration list for PBXNativeTarget "RickAndMortyTvShowTests" */;
+			buildPhases = (
+				D3F9A3462AB525E4001264AC /* Sources */,
+				D3F9A3472AB525E4001264AC /* Frameworks */,
+				D3F9A3482AB525E4001264AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3F9A34C2AB525E4001264AC /* PBXTargetDependency */,
+			);
+			name = RickAndMortyTvShowTests;
+			productName = RickAndMortyTvShowTests;
+			productReference = D3F9A34A2AB525E4001264AC /* RickAndMortyTvShowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3F9A3532AB525E4001264AC /* RickAndMortyTvShowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F9A3642AB525E4001264AC /* Build configuration list for PBXNativeTarget "RickAndMortyTvShowUITests" */;
+			buildPhases = (
+				D3F9A3502AB525E4001264AC /* Sources */,
+				D3F9A3512AB525E4001264AC /* Frameworks */,
+				D3F9A3522AB525E4001264AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3F9A3562AB525E4001264AC /* PBXTargetDependency */,
+			);
+			name = RickAndMortyTvShowUITests;
+			productName = RickAndMortyTvShowUITests;
+			productReference = D3F9A3542AB525E4001264AC /* RickAndMortyTvShowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3F9A32D2AB525E2001264AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D3F9A3342AB525E2001264AC = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					D3F9A3492AB525E4001264AC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = D3F9A3342AB525E2001264AC;
+					};
+					D3F9A3532AB525E4001264AC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = D3F9A3342AB525E2001264AC;
+					};
+				};
+			};
+			buildConfigurationList = D3F9A3302AB525E2001264AC /* Build configuration list for PBXProject "RickAndMortyTvShow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3F9A32C2AB525E2001264AC;
+			productRefGroup = D3F9A3362AB525E2001264AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3F9A3342AB525E2001264AC /* RickAndMortyTvShow */,
+				D3F9A3492AB525E4001264AC /* RickAndMortyTvShowTests */,
+				D3F9A3532AB525E4001264AC /* RickAndMortyTvShowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3F9A3332AB525E2001264AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F9A3402AB525E4001264AC /* Preview Assets.xcassets in Resources */,
+				D3F9A33D2AB525E4001264AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F9A3482AB525E4001264AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F9A3522AB525E4001264AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3F9A3312AB525E2001264AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F9A3422AB525E4001264AC /* Persistence.swift in Sources */,
+				D3F9A3452AB525E4001264AC /* RickAndMortyTvShow.xcdatamodeld in Sources */,
+				D3F9A33B2AB525E2001264AC /* ContentView.swift in Sources */,
+				D3F9A3392AB525E2001264AC /* RickAndMortyTvShowApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F9A3462AB525E4001264AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F9A34F2AB525E4001264AC /* RickAndMortyTvShowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F9A3502AB525E4001264AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F9A35B2AB525E4001264AC /* RickAndMortyTvShowUITestsLaunchTests.swift in Sources */,
+				D3F9A3592AB525E4001264AC /* RickAndMortyTvShowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3F9A34C2AB525E4001264AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3F9A3342AB525E2001264AC /* RickAndMortyTvShow */;
+			targetProxy = D3F9A34B2AB525E4001264AC /* PBXContainerItemProxy */;
+		};
+		D3F9A3562AB525E4001264AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3F9A3342AB525E2001264AC /* RickAndMortyTvShow */;
+			targetProxy = D3F9A3552AB525E4001264AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D3F9A35C2AB525E4001264AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3F9A35D2AB525E4001264AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3F9A35F2AB525E4001264AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RickAndMortyTvShow/Preview Content\"";
+				DEVELOPMENT_TEAM = B5ZMBC5VV7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gastonPenaInc.RickAndMortyTvShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3F9A3602AB525E4001264AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RickAndMortyTvShow/Preview Content\"";
+				DEVELOPMENT_TEAM = B5ZMBC5VV7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gastonPenaInc.RickAndMortyTvShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3F9A3622AB525E4001264AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5ZMBC5VV7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gastonPenaInc.RickAndMortyTvShowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RickAndMortyTvShow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RickAndMortyTvShow";
+			};
+			name = Debug;
+		};
+		D3F9A3632AB525E4001264AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5ZMBC5VV7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gastonPenaInc.RickAndMortyTvShowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RickAndMortyTvShow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RickAndMortyTvShow";
+			};
+			name = Release;
+		};
+		D3F9A3652AB525E4001264AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5ZMBC5VV7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gastonPenaInc.RickAndMortyTvShowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RickAndMortyTvShow;
+			};
+			name = Debug;
+		};
+		D3F9A3662AB525E4001264AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5ZMBC5VV7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gastonPenaInc.RickAndMortyTvShowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RickAndMortyTvShow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3F9A3302AB525E2001264AC /* Build configuration list for PBXProject "RickAndMortyTvShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F9A35C2AB525E4001264AC /* Debug */,
+				D3F9A35D2AB525E4001264AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F9A35E2AB525E4001264AC /* Build configuration list for PBXNativeTarget "RickAndMortyTvShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F9A35F2AB525E4001264AC /* Debug */,
+				D3F9A3602AB525E4001264AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F9A3612AB525E4001264AC /* Build configuration list for PBXNativeTarget "RickAndMortyTvShowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F9A3622AB525E4001264AC /* Debug */,
+				D3F9A3632AB525E4001264AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F9A3642AB525E4001264AC /* Build configuration list for PBXNativeTarget "RickAndMortyTvShowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F9A3652AB525E4001264AC /* Debug */,
+				D3F9A3662AB525E4001264AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3F9A3432AB525E4001264AC /* RickAndMortyTvShow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3F9A3442AB525E4001264AC /* RickAndMortyTvShow.xcdatamodel */,
+			);
+			currentVersion = D3F9A3442AB525E4001264AC /* RickAndMortyTvShow.xcdatamodel */;
+			path = RickAndMortyTvShow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D3F9A32D2AB525E2001264AC /* Project object */;
+}
