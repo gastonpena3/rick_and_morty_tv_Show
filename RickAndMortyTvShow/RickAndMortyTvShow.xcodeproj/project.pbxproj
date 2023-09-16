@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3E714F92AB64D55003CD586 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E714F82AB64D55003CD586 /* Location.swift */; };
 		D3F9A3392AB525E2001264AC /* RickAndMortyTvShowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3382AB525E2001264AC /* RickAndMortyTvShowApp.swift */; };
 		D3F9A33B2AB525E2001264AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A33A2AB525E2001264AC /* ContentView.swift */; };
 		D3F9A33D2AB525E4001264AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F9A33C2AB525E4001264AC /* Assets.xcassets */; };
@@ -16,6 +17,13 @@
 		D3F9A34F2AB525E4001264AC /* RickAndMortyTvShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A34E2AB525E4001264AC /* RickAndMortyTvShowTests.swift */; };
 		D3F9A3592AB525E4001264AC /* RickAndMortyTvShowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3582AB525E4001264AC /* RickAndMortyTvShowUITests.swift */; };
 		D3F9A35B2AB525E4001264AC /* RickAndMortyTvShowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A35A2AB525E4001264AC /* RickAndMortyTvShowUITestsLaunchTests.swift */; };
+		D3F9A36E2AB52D70001264AC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A36D2AB52D70001264AC /* HomeView.swift */; };
+		D3F9A3702AB52F02001264AC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A36F2AB52F02001264AC /* APIClient.swift */; };
+		D3F9A3722AB52F4A001264AC /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3712AB52F4A001264AC /* APIConfig.swift */; };
+		D3F9A3742AB52FAC001264AC /* CharactersRepositoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3732AB52FAC001264AC /* CharactersRepositoryProtocols.swift */; };
+		D3F9A3762AB52FBD001264AC /* CharactersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3752AB52FBD001264AC /* CharactersRepository.swift */; };
+		D3F9A3782AB53043001264AC /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3772AB53043001264AC /* Character.swift */; };
+		D3F9A37A2AB533D0001264AC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3792AB533D0001264AC /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3E714F82AB64D55003CD586 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D3F9A3352AB525E2001264AC /* RickAndMortyTvShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyTvShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F9A3382AB525E2001264AC /* RickAndMortyTvShowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTvShowApp.swift; sourceTree = "<group>"; };
 		D3F9A33A2AB525E2001264AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +57,13 @@
 		D3F9A3542AB525E4001264AC /* RickAndMortyTvShowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyTvShowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F9A3582AB525E4001264AC /* RickAndMortyTvShowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTvShowUITests.swift; sourceTree = "<group>"; };
 		D3F9A35A2AB525E4001264AC /* RickAndMortyTvShowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTvShowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3F9A36D2AB52D70001264AC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D3F9A36F2AB52F02001264AC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		D3F9A3712AB52F4A001264AC /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		D3F9A3732AB52FAC001264AC /* CharactersRepositoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepositoryProtocols.swift; sourceTree = "<group>"; };
+		D3F9A3752AB52FBD001264AC /* CharactersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepository.swift; sourceTree = "<group>"; };
+		D3F9A3772AB53043001264AC /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		D3F9A3792AB533D0001264AC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,12 @@
 		D3F9A3372AB525E2001264AC /* RickAndMortyTvShow */ = {
 			isa = PBXGroup;
 			children = (
+				D3F9A36C2AB52D3D001264AC /* Utils */,
+				D3F9A36B2AB52D25001264AC /* Resourses */,
+				D3F9A36A2AB52D1D001264AC /* Models */,
+				D3F9A3692AB52D14001264AC /* ViewModels */,
+				D3F9A3682AB52D09001264AC /* Views */,
+				D3F9A3672AB52CF0001264AC /* Network */,
 				D3F9A3382AB525E2001264AC /* RickAndMortyTvShowApp.swift */,
 				D3F9A33A2AB525E2001264AC /* ContentView.swift */,
 				D3F9A33C2AB525E4001264AC /* Assets.xcassets */,
@@ -131,6 +153,56 @@
 				D3F9A35A2AB525E4001264AC /* RickAndMortyTvShowUITestsLaunchTests.swift */,
 			);
 			path = RickAndMortyTvShowUITests;
+			sourceTree = "<group>";
+		};
+		D3F9A3672AB52CF0001264AC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9A36F2AB52F02001264AC /* APIClient.swift */,
+				D3F9A3712AB52F4A001264AC /* APIConfig.swift */,
+				D3F9A3732AB52FAC001264AC /* CharactersRepositoryProtocols.swift */,
+				D3F9A3752AB52FBD001264AC /* CharactersRepository.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D3F9A3682AB52D09001264AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9A36D2AB52D70001264AC /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D3F9A3692AB52D14001264AC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9A3792AB533D0001264AC /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D3F9A36A2AB52D1D001264AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9A3772AB53043001264AC /* Character.swift */,
+				D3E714F82AB64D55003CD586 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3F9A36B2AB52D25001264AC /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		D3F9A36C2AB52D3D001264AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +336,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F9A3422AB525E4001264AC /* Persistence.swift in Sources */,
+				D3F9A37A2AB533D0001264AC /* HomeViewModel.swift in Sources */,
+				D3F9A3742AB52FAC001264AC /* CharactersRepositoryProtocols.swift in Sources */,
+				D3F9A3762AB52FBD001264AC /* CharactersRepository.swift in Sources */,
 				D3F9A3452AB525E4001264AC /* RickAndMortyTvShow.xcdatamodeld in Sources */,
 				D3F9A33B2AB525E2001264AC /* ContentView.swift in Sources */,
+				D3F9A3722AB52F4A001264AC /* APIConfig.swift in Sources */,
+				D3F9A36E2AB52D70001264AC /* HomeView.swift in Sources */,
+				D3F9A3782AB53043001264AC /* Character.swift in Sources */,
 				D3F9A3392AB525E2001264AC /* RickAndMortyTvShowApp.swift in Sources */,
+				D3E714F92AB64D55003CD586 /* Location.swift in Sources */,
+				D3F9A3702AB52F02001264AC /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
