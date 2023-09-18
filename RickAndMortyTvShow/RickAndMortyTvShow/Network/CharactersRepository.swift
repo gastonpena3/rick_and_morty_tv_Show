@@ -42,6 +42,32 @@ class CharactersRepository: CharactersRepositoryProtocols {
     }
     
     
+    ///Get Character by ID
+    func getCharacter(for id: Int, callback: @escaping (Result<Character?, Error>) -> Void) {
+        
+        let url = URL(string:config.baseURL + "character/\(id)")
+        
+        api.request(url, responseModel: Character.self) { result in
+            
+            switch result {
+                
+            case .success(let character):
+                
+                callback(.success(character))
+                
+            case .failure(let error):
+                
+                print("Error getting rick & morty character by id: \(error.localizedDescription)")
+                
+                callback(.failure(error))
+                
+            }
+            
+        }
+        
+    }
+    
+    
     ///Get Character Location Details
     func getCharacterLocationDetails(from url: String, callback: @escaping (Result<Location?, Error>) -> Void) {
         

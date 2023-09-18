@@ -29,9 +29,9 @@ struct HomeView<HomeViewModel>: View where HomeViewModel : HomeViewModelProtocol
                         
                         ForEach(Array(homeViewModel.charactersList.enumerated()), id: \.offset) { index, character in
                             
-                            Button(action: {
+                            NavigationLink(destination: {
                                 
-                                //TODO: CELL ACTION
+                                CharacterDetailsView(characterId: character.id)
                                 
                             }, label: {
                                 
@@ -100,7 +100,7 @@ struct HomeView<HomeViewModel>: View where HomeViewModel : HomeViewModelProtocol
 
                 }
                 
-                .navigationBarTitle("Rick & Morty Characters", displayMode: .large)
+                .navigationBarTitle("Rick & Morty", displayMode: .large)
             }
             
             .onAppear() {
