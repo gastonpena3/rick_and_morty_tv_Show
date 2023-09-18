@@ -26,7 +26,13 @@ struct Info: Decodable {
     }
 }
 
-struct Character: Decodable {
+struct Character: Decodable, Identifiable, Equatable {
+    
+    static func == (lhs: Character, rhs: Character) -> Bool {
+        return lhs.name?.lowercased() == rhs.name?.lowercased()
+    }
+    
+    
     var id: Int
     var name: String?
     var status: String?

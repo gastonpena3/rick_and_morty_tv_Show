@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D3E714F92AB64D55003CD586 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E714F82AB64D55003CD586 /* Location.swift */; };
+		D3E714FB2AB776C6003CD586 /* HomeViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E714FA2AB776C6003CD586 /* HomeViewModelProtocols.swift */; };
+		D3E714FD2AB77873003CD586 /* Array+Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E714FC2AB77873003CD586 /* Array+Unique.swift */; };
+		D3E714FF2AB77A55003CD586 /* String+GetNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E714FE2AB77A55003CD586 /* String+GetNumber.swift */; };
+		D3E715022AB77BCE003CD586 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E715012AB77BCE003CD586 /* LoadingView.swift */; };
+		D3E715042AB77BF2003CD586 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E715032AB77BF2003CD586 /* ActivityIndicatorView.swift */; };
+		D3E715072AB7B15F003CD586 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D3E715062AB7B15F003CD586 /* Kingfisher */; };
+		D3E715092AB7B21F003CD586 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E715082AB7B21F003CD586 /* ImageLoader.swift */; };
 		D3F9A3392AB525E2001264AC /* RickAndMortyTvShowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3382AB525E2001264AC /* RickAndMortyTvShowApp.swift */; };
 		D3F9A33B2AB525E2001264AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A33A2AB525E2001264AC /* ContentView.swift */; };
 		D3F9A33D2AB525E4001264AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F9A33C2AB525E4001264AC /* Assets.xcassets */; };
@@ -45,6 +52,12 @@
 
 /* Begin PBXFileReference section */
 		D3E714F82AB64D55003CD586 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D3E714FA2AB776C6003CD586 /* HomeViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocols.swift; sourceTree = "<group>"; };
+		D3E714FC2AB77873003CD586 /* Array+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Unique.swift"; sourceTree = "<group>"; };
+		D3E714FE2AB77A55003CD586 /* String+GetNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+GetNumber.swift"; sourceTree = "<group>"; };
+		D3E715012AB77BCE003CD586 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		D3E715032AB77BF2003CD586 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		D3E715082AB7B21F003CD586 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		D3F9A3352AB525E2001264AC /* RickAndMortyTvShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyTvShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F9A3382AB525E2001264AC /* RickAndMortyTvShowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTvShowApp.swift; sourceTree = "<group>"; };
 		D3F9A33A2AB525E2001264AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E715072AB7B15F003CD586 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +105,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3E715002AB77BB3003CD586 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3E715012AB77BCE003CD586 /* LoadingView.swift */,
+				D3E715032AB77BF2003CD586 /* ActivityIndicatorView.swift */,
+				D3E715082AB7B21F003CD586 /* ImageLoader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D3F9A32C2AB525E2001264AC = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				D3F9A3792AB533D0001264AC /* HomeViewModel.swift */,
+				D3E714FA2AB776C6003CD586 /* HomeViewModelProtocols.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -194,6 +219,7 @@
 		D3F9A36B2AB52D25001264AC /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				D3E715002AB77BB3003CD586 /* Views */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -201,6 +227,8 @@
 		D3F9A36C2AB52D3D001264AC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D3E714FC2AB77873003CD586 /* Array+Unique.swift */,
+				D3E714FE2AB77A55003CD586 /* String+GetNumber.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -221,6 +249,9 @@
 			dependencies = (
 			);
 			name = RickAndMortyTvShow;
+			packageProductDependencies = (
+				D3E715062AB7B15F003CD586 /* Kingfisher */,
+			);
 			productName = RickAndMortyTvShow;
 			productReference = D3F9A3352AB525E2001264AC /* RickAndMortyTvShow.app */;
 			productType = "com.apple.product-type.application";
@@ -293,6 +324,9 @@
 				Base,
 			);
 			mainGroup = D3F9A32C2AB525E2001264AC;
+			packageReferences = (
+				D3E715052AB7B15F003CD586 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D3F9A3362AB525E2001264AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,13 +374,19 @@
 				D3F9A3742AB52FAC001264AC /* CharactersRepositoryProtocols.swift in Sources */,
 				D3F9A3762AB52FBD001264AC /* CharactersRepository.swift in Sources */,
 				D3F9A3452AB525E4001264AC /* RickAndMortyTvShow.xcdatamodeld in Sources */,
+				D3E715022AB77BCE003CD586 /* LoadingView.swift in Sources */,
 				D3F9A33B2AB525E2001264AC /* ContentView.swift in Sources */,
 				D3F9A3722AB52F4A001264AC /* APIConfig.swift in Sources */,
 				D3F9A36E2AB52D70001264AC /* HomeView.swift in Sources */,
+				D3E714FD2AB77873003CD586 /* Array+Unique.swift in Sources */,
+				D3E714FB2AB776C6003CD586 /* HomeViewModelProtocols.swift in Sources */,
 				D3F9A3782AB53043001264AC /* Character.swift in Sources */,
 				D3F9A3392AB525E2001264AC /* RickAndMortyTvShowApp.swift in Sources */,
+				D3E714FF2AB77A55003CD586 /* String+GetNumber.swift in Sources */,
+				D3E715092AB7B21F003CD586 /* ImageLoader.swift in Sources */,
 				D3E714F92AB64D55003CD586 /* Location.swift in Sources */,
 				D3F9A3702AB52F02001264AC /* APIClient.swift in Sources */,
+				D3E715042AB77BF2003CD586 /* ActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +711,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3E715052AB7B15F003CD586 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3E715062AB7B15F003CD586 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3E715052AB7B15F003CD586 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D3F9A3432AB525E4001264AC /* RickAndMortyTvShow.xcdatamodeld */ = {
