@@ -14,9 +14,7 @@ struct GenericCellView: View {
     
     var body: some View {
         VStack {
-
                 HStack {
-                    
                     Text(title)
                         .font(.headline).bold()
                         .foregroundColor(Color.primary)
@@ -24,14 +22,11 @@ struct GenericCellView: View {
                     Spacer()
                     
                     if let description = description {
-                        
                         Text(description)
                             .foregroundColor(Color.primary)
-                        
                     }
                 }
         }
         .padding()
     }
-    
 }

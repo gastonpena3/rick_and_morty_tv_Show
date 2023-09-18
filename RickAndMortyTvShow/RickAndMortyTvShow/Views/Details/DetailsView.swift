@@ -7,73 +7,56 @@
 
 import SwiftUI
 
-struct CharacterDetailsView: View {
+struct DetailsView: View {
     
     let characterId: Int?
+    let getLocation: Bool?
     
     @ObservedObject var viewModel = CharacterDetailsViewModel(repository: CharactersRepository())
     
-    init(characterId: Int) {
+    init(characterId: Int, getLocation: Bool = false) {
         self.characterId = characterId
+        self.getLocation = getLocation
     }
     
     var body: some View {
-        
         NavigationStack {
-            
             LoadingView(isShowing: $viewModel.isLoading) {
-                
                 VStack {
                     List {
-                        
-                        ForEach(viewModel.character?.toData() ?? []) { data in
-                            
+                        ForEach(viewModel.dataSource ?? []) { data in
                             getCellFor(data: data)
-                            
                         }
                     }
                 }
-
             }
             .onAppear{
                 viewModel.isLoading = true
-                
-                viewModel.getCharacter(for: self.characterId ?? 0) {
-                    
+                viewModel.getData(for: self.characterId ?? 0, with: getLocation ?? false) {
                     viewModel.isLoading = false
                 }
             }
         }
-        
     }
     
     @ViewBuilder func getCellFor(data: DataModel) -> some View {
-        
         if data.isUserInteracionEnable ?? false {
-            
             VStack {
-                
-                NavigationLink(destination: LocationDetailsView()) {
-                    
+                NavigationLink(destination: DetailsView(characterId: self.characterId ?? 0, getLocation: true)) {
                     GenericCellView(title: data.key, description: data.value)
                 }
             }
-            
         } else {
-            
             VStack {
-                
                 GenericCellView(title: data.key, description: data.value)
             }
-
         }
-
     }
-    
 }
 
 struct CharacterDetailsView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        CharacterDetailsView(characterId: 0)
+        DetailsView(characterId: 0)
     }
 }

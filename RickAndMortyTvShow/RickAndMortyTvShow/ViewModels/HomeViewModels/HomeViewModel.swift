@@ -17,7 +17,6 @@ class HomeViewModel: HomeViewModelProtocols {
     @Published var characterNextPage: String?
     @Published var isLoadingMoreCharcaters = false
     @Published var selectedCharacter: Character?
-
     @Published var isLoading = true
     @Published var goToDetailsView: Bool = false
     
@@ -26,32 +25,22 @@ class HomeViewModel: HomeViewModelProtocols {
     }
     
     func getCharacters(callback: @escaping () -> ()) {
-        
         var characterUrl: String?
         
         if isScrolling && characterNextPage != nil {
-            
             characterUrl = characterNextPage
-            
         }
         
         self.repository.getCharacters(for: characterUrl) { result in
-            
             switch result {
-                
             case .success(let characters):
-                
                 DispatchQueue.main.async {
-                    
                     self.charactersResponse = characters
-
                     self.setNextpage(from: characters?.info.next ?? "")
-                    
                     self.charactersList.append(contentsOf: characters?.results ?? [])
 
                     callback()
                 }
-                
             case .failure(let error):
                 
                 //TODO: Show Error
@@ -64,16 +53,12 @@ class HomeViewModel: HomeViewModelProtocols {
     }
 
     func setNextpage(from url: String) {
-        
         let currentURLValue = Int(self.characterNextPage?.getNumber() ?? "") ?? 0
         let newURLValue = Int(url.getNumber()) ?? 0
         
         if newURLValue > currentURLValue {
-            
             self.characterNextPage = url
-            
         }
-        
     }
     
 }

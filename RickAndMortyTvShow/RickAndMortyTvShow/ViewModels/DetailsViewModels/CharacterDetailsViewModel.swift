@@ -10,7 +10,7 @@ import Foundation
 class CharacterDetailsViewModel: CharacterDetailsViewModelProtocols {
     
     internal var repository: CharactersRepositoryProtocols
-    @Published var character: Character?
+    @Published var dataSource: [DataModel]?
     @Published var isLiked = false
     @Published var isLoading = true
     
@@ -18,17 +18,24 @@ class CharacterDetailsViewModel: CharacterDetailsViewModelProtocols {
         self.repository = repository
     }
     
+    func getData(for id: Int, with location: Bool, callback: @escaping () -> ()) {
+        if location {
+            self.getLocation(for: id) {
+                callback()
+            }
+        } else {
+            self.getCharacter(for: id) {
+                callback()
+            }
+        }
+    }
+    
     func getCharacter(for id: Int, callback: @escaping () -> ()) {
-        
         self.repository.getCharacter(for: id) { result in
-            
             switch result {
-                
             case .success(let character):
-                
                 DispatchQueue.main.async {
-                    
-                    self.character = character
+                    self.dataSource = character?.toData()
                     
                     callback()
                 }
@@ -40,6 +47,25 @@ class CharacterDetailsViewModel: CharacterDetailsViewModelProtocols {
                 callback()
             }
         }
-        
+    }
+    
+    func getLocation(for id: Int, callback: @escaping () -> ()) {
+        repository.getCharacterLocation(from: id) { result in
+            switch result {
+            case .success(let location):
+                DispatchQueue.main.async {
+                    self.dataSource = location?.toData()
+                    
+                    callback()
+                }
+                
+            case .failure(let error):
+                
+                //TODO: Show Error
+                
+                callback()
+            }
+        }
+            
     }
 }

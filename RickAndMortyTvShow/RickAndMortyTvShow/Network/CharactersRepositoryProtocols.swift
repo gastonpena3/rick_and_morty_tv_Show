@@ -16,6 +16,6 @@ protocol CharactersRepositoryProtocols {
     func getCharacter(for id: Int, callback: @escaping (Result<Character?, Error>) -> Void)
     
     ///Get Character Location Details
-    func getCharacterLocationDetails(from location: String, callback: @escaping (Result<Location?, Error>) -> Void)
+    func getCharacterLocation(from id: Int, callback: @escaping (Result<Location?, Error>) -> Void)
 
 }

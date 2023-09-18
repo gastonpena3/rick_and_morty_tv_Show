@@ -12,29 +12,18 @@ struct HomeView<HomeViewModel>: View where HomeViewModel : HomeViewModelProtocol
     @StateObject var homeViewModel: HomeViewModel
 
     init(homeViewModel: HomeViewModel) {
-        
         self._homeViewModel = StateObject(wrappedValue: homeViewModel)
-
     }
     
     var body: some View {
-        
         NavigationStack {
-            
             LoadingView(isShowing: $homeViewModel.isLoading) {
-                
                 VStack {
-                    
                     List {
-                        
                         ForEach(Array(homeViewModel.charactersList.enumerated()), id: \.offset) { index, character in
-                            
                             NavigationLink(destination: {
-                                
-                                CharacterDetailsView(characterId: character.id)
-                                
+                                DetailsView(characterId: character.id)
                             }, label: {
-                                
                                 HStack {
                                     ImageLoader.share.setTvShowPoster(imageURL: character.image ?? "")
                                         .resizable()
@@ -56,34 +45,25 @@ struct HomeView<HomeViewModel>: View where HomeViewModel : HomeViewModelProtocol
                                     }
                                     .padding(.horizontal, 10)
                                 }
-
                             })
 
-                            .onAppear(){
-                                
+                            .onAppear() {
                                 if (homeViewModel.charactersList.last == character) {
-                                    
                                     homeViewModel.isLoadingMoreCharcaters = true
                                     homeViewModel.isScrolling = true
                                     
                                     self.homeViewModel.getCharacters {
-                                        
                                         DispatchQueue.main.async {
-                                            
                                             homeViewModel.isScrolling = false
                                             homeViewModel.isLoadingMoreCharcaters = false
-                                            
                                         }
                                     }
                                 }
                             }
-                            
                         }
                         
                         if homeViewModel.isLoadingMoreCharcaters {
-                            
                             HStack(alignment: .center) {
-                                
                                 Spacer()
                                 
                                 ProgressView()
@@ -93,35 +73,29 @@ struct HomeView<HomeViewModel>: View where HomeViewModel : HomeViewModelProtocol
                             }
                             .frame(height: 50)
                         }
-
                     }
                     .frame( maxWidth: .infinity)
                     .listStyle(GroupedListStyle())
 
                 }
-                
                 .navigationBarTitle("Rick & Morty", displayMode: .large)
             }
             
             .onAppear() {
-                
                 homeViewModel.isLoading = true
                 
                 ///Fetch Characters From API
                 homeViewModel.getCharacters() {
-                    
                     homeViewModel.isLoading = false
-                    
                 }
-                
             }
         }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        
         let viewModel: HomeViewModel = HomeViewModel(repository: CharactersRepository())
         HomeView(homeViewModel: viewModel)
     }

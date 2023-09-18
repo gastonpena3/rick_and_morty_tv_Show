@@ -10,6 +10,7 @@ import SwiftUI
 import Kingfisher
 
 class ImageLoader {
+    
     static var share = ImageLoader()
 
     func setTvShowPoster(imageURL: String) -> KFImage {

@@ -8,7 +8,7 @@
 import Foundation
 
 class CharactersRepository: CharactersRepositoryProtocols {
-    
+
     public private(set) var config: APIConfig = APIConfig()
     private(set) var api: APIClient = APIClient()
     
@@ -69,9 +69,9 @@ class CharactersRepository: CharactersRepositoryProtocols {
     
     
     ///Get Character Location Details
-    func getCharacterLocationDetails(from url: String, callback: @escaping (Result<Location?, Error>) -> Void) {
+    func getCharacterLocation(from id: Int, callback: @escaping (Result<Location?, Error>) -> Void) {
         
-        let url = URL(string: url)
+        let url = URL(string:config.baseURL + "location/\(id)")
         
         api.request(url, responseModel: Location.self) { result in
             
