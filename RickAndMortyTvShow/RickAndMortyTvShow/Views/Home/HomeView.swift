@@ -21,30 +21,11 @@ struct HomeView<HomeViewModel>: View where HomeViewModel : HomeViewModelProtocol
                 VStack {
                     List {
                         ForEach(Array(homeViewModel.charactersList.enumerated()), id: \.offset) { index, character in
-                            NavigationLink(destination: {
-                                DetailsView(characterId: character.id)
+                            Button(action: {
+                                homeViewModel.selectedCharacter = character
+                                homeViewModel.goToDetailsView = true
                             }, label: {
-                                HStack {
-                                    ImageLoader.share.setTvShowPoster(imageURL: character.image ?? "")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .foregroundColor(.white)
-                                        .frame(height: 80)
-                                        .cornerRadius(10)
-                                        .padding(.vertical, 5)
-                                    
-                                    VStack(alignment: .leading, spacing: 10) {
-                                        Text(character.name ?? "")
-                                            .font(.title2)
-                                            .fontWeight(.semibold)
-                                            .foregroundColor(.primary)
-                                        
-                                        Text("Episodes:  \(character.episode?.count ?? 0)")
-                                            .font(.subheadline)
-                                            .foregroundColor(.secondary)
-                                    }
-                                    .padding(.horizontal, 10)
-                                }
+                                HomeViewCell(character: character)
                             })
 
                             .onAppear() {
@@ -76,11 +57,14 @@ struct HomeView<HomeViewModel>: View where HomeViewModel : HomeViewModelProtocol
                     }
                     .frame( maxWidth: .infinity)
                     .listStyle(GroupedListStyle())
-
+                    .navigationDestination(isPresented: $homeViewModel.goToDetailsView) {
+                        if let character = homeViewModel.selectedCharacter {
+                            goToDetails(with: character)
+                        }
+                    }
                 }
                 .navigationBarTitle("Rick & Morty", displayMode: .large)
             }
-            
             .onAppear() {
                 homeViewModel.isLoading = true
                 
@@ -89,14 +73,27 @@ struct HomeView<HomeViewModel>: View where HomeViewModel : HomeViewModelProtocol
                     homeViewModel.isLoading = false
                 }
             }
+            .onDisappear() {
+                homeViewModel.isLoading = false
+            }
+            .alert(homeViewModel.errorView.errorMessage, isPresented: $homeViewModel.errorView.showErrorAlert) {
+                
+                Button("OK", role: .cancel) { }
+                
+            }
         }
+    }
+    
+    func goToDetails(with character: Character) -> DetailsView<DetailsViewModel> {
+        let viewModel = DetailsViewModel(repository: CharactersRepository(), errorView: ErrorViewModel())
+        return DetailsView(characterId: homeViewModel.selectedCharacter?.id ?? 0, viewModel: viewModel)
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     
     static var previews: some View {
-        let viewModel: HomeViewModel = HomeViewModel(repository: CharactersRepository())
+        let viewModel: HomeViewModel = HomeViewModel(repository: CharactersRepository(), errorView: ErrorViewModel())
         HomeView(homeViewModel: viewModel)
     }
 }

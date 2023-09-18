@@ -7,16 +7,17 @@
 
 import SwiftUI
 
-struct DetailsView: View {
+struct DetailsView<DetailsViewModel>: View where DetailsViewModel : DetailsViewModelProtocols {
     
     let characterId: Int?
     let getLocation: Bool?
     
-    @ObservedObject var viewModel = CharacterDetailsViewModel(repository: CharactersRepository())
+    @StateObject var viewModel: DetailsViewModel
     
-    init(characterId: Int, getLocation: Bool = false) {
+    init(characterId: Int, getLocation: Bool = false, viewModel: DetailsViewModel) {
         self.characterId = characterId
         self.getLocation = getLocation
+        self._viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
@@ -42,7 +43,7 @@ struct DetailsView: View {
     @ViewBuilder func getCellFor(data: DataModel) -> some View {
         if data.isUserInteracionEnable ?? false {
             VStack {
-                NavigationLink(destination: DetailsView(characterId: self.characterId ?? 0, getLocation: true)) {
+                NavigationLink(destination: DetailsView(characterId: self.characterId ?? 0, getLocation: true, viewModel: self.viewModel)) {
                     GenericCellView(title: data.key, description: data.value)
                 }
             }
@@ -57,6 +58,6 @@ struct DetailsView: View {
 struct CharacterDetailsView_Previews: PreviewProvider {
     
     static var previews: some View {
-        DetailsView(characterId: 0)
+        DetailsView(characterId: 0, viewModel: DetailsViewModel(repository: CharactersRepository(), errorView: ErrorViewModel()))
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct RickAndMortyTvShowApp: App {
     
-    let viewModel: HomeViewModel = HomeViewModel(repository: CharactersRepository())
+    let viewModel: HomeViewModel = HomeViewModel(repository: CharactersRepository(), errorView: ErrorViewModel())
 
     var body: some Scene {
         WindowGroup {

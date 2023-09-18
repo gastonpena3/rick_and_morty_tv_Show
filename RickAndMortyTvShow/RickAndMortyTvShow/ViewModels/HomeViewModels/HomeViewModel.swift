@@ -10,7 +10,8 @@ import Foundation
 class HomeViewModel: HomeViewModelProtocols {
 
     internal var repository: CharactersRepositoryProtocols
-
+    internal var errorView: any ErrorViewModelProtocol
+    
     @Published var charactersResponse: Characters?
     @Published var charactersList: [Character] = []
     @Published var isScrolling: Bool = false
@@ -20,8 +21,10 @@ class HomeViewModel: HomeViewModelProtocols {
     @Published var isLoading = true
     @Published var goToDetailsView: Bool = false
     
-    init(repository: CharactersRepositoryProtocols) {
+    init(repository: CharactersRepositoryProtocols, errorView: any ErrorViewModelProtocol) {
         self.repository = repository
+        self.errorView = errorView
+        
     }
     
     func getCharacters(callback: @escaping () -> ()) {
@@ -44,9 +47,9 @@ class HomeViewModel: HomeViewModelProtocols {
                     callback()
                 }
             case .failure(let error):
+                ///Show error
+                self.errorView.showAPIError(with: "Error retrieving Characters: \(error.localizedDescription)")
                 
-                //TODO: Show Error
-
                 callback()
             }
             

@@ -7,15 +7,18 @@
 
 import Foundation
 
-class CharacterDetailsViewModel: CharacterDetailsViewModelProtocols {
+class DetailsViewModel: DetailsViewModelProtocols {
     
     internal var repository: CharactersRepositoryProtocols
+    internal var errorView: any ErrorViewModelProtocol
+    
     @Published var dataSource: [DataModel]?
     @Published var isLiked = false
     @Published var isLoading = true
     
-    init(repository: CharactersRepositoryProtocols) {
+    init(repository: CharactersRepositoryProtocols, errorView: any ErrorViewModelProtocol) {
         self.repository = repository
+        self.errorView = errorView
     }
     
     func getData(for id: Int, with location: Bool, callback: @escaping () -> ()) {
@@ -36,13 +39,12 @@ class CharacterDetailsViewModel: CharacterDetailsViewModelProtocols {
             case .success(let character):
                 DispatchQueue.main.async {
                     self.dataSource = character?.toData()
-                    
+
                     callback()
                 }
-                
             case .failure(let error):
-                
-                //TODO: Show Error
+                ///Show error
+                self.errorView.showAPIError(with: "Error retrieving Character from ID: \(error.localizedDescription)")
                 
                 callback()
             }
@@ -58,10 +60,9 @@ class CharacterDetailsViewModel: CharacterDetailsViewModelProtocols {
                     
                     callback()
                 }
-                
             case .failure(let error):
-                
-                //TODO: Show Error
+                ///Show error
+                self.errorView.showAPIError(with: "Error retrieving Character Location: \(error.localizedDescription)")
                 
                 callback()
             }

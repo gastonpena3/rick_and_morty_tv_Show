@@ -10,6 +10,7 @@ import Foundation
 protocol HomeViewModelProtocols: ObservableObject {
     
     var repository: CharactersRepositoryProtocols { get set }
+    var errorView: any ErrorViewModelProtocol { get set }
     var charactersResponse: Characters?  { get set }
     var charactersList: [Character]  { get set }
     var selectedCharacter: Character?  { get set }
