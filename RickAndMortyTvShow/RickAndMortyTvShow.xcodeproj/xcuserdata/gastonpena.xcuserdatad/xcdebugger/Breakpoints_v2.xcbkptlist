@@ -3,4 +3,310 @@
    uuid = "964F7729-BFCA-4AA2-8AB4-2F17F297744C"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "462329AB-A5F7-46D8-A4DD-942507354F90"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyTvShow/Views/Home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "262C9BC9-166F-44F5-8849-D076962E4396"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getCharacters(callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "262C9BC9-166F-44F5-8849-D076962E4396 - 8562dd74e9fd305b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMortyTvShow.HomeViewModel.getCharacters(callback: () -&gt; ()) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "345">
+               </Location>
+               <Location
+                  uuid = "262C9BC9-166F-44F5-8849-D076962E4396 - 3002a0e07c584f9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;RickAndMortyTvShow.Characters&gt;, Swift.Error&gt;) -&gt; () in RickAndMortyTvShow.HomeViewModel.getCharacters(callback: () -&gt; ()) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "266">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99DD1518-5FE3-4D4C-984D-624233463F49"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyTvShow/Views/Home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "99DD1518-5FE3-4D4C-984D-624233463F49 - 65d66221c6cdb0ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #3 () -&gt; () in closure #1 (Swift.Int, RickAndMortyTvShow.Character) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ForEach&lt;Swift.Array&lt;(offset: Swift.Int, element: RickAndMortyTvShow.Character)&gt;, Swift.Int, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt;, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarTitle(_: SwiftUI.LocalizedStringKey, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in RickAndMortyTvShow.HomeView.body.getter : some"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/Views/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "231">
+               </Location>
+               <Location
+                  uuid = "99DD1518-5FE3-4D4C-984D-624233463F49 - 359fe690fdf6d010"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 () -&gt; () in closure #3 () -&gt; () in closure #1 (Swift.Int, RickAndMortyTvShow.Character) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ForEach&lt;Swift.Array&lt;(offset: Swift.Int, element: RickAndMortyTvShow.Character)&gt;, Swift.Int, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt;, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarTitle(_: SwiftUI.LocalizedStringKey, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in RickAndMortyTvShow.HomeView.body.getter : some"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/Views/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "59">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB2836ED-EAF6-47D5-865A-DD6BC7E724DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getCharacters(callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE3658B4-A56D-4151-9599-0476A75664CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "getCharacters(callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE3658B4-A56D-4151-9599-0476A75664CD - 163d06c92da1e730"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;RickAndMortyTvShow.Characters&gt;, Swift.Error&gt;) -&gt; () in RickAndMortyTvShow.HomeViewModel.getCharacters(callback: () -&gt; ()) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "919">
+               </Location>
+               <Location
+                  uuid = "CE3658B4-A56D-4151-9599-0476A75664CD - 163d06c92da1e7d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;RickAndMortyTvShow.Characters&gt;, Swift.Error&gt;) -&gt; () in RickAndMortyTvShow.HomeViewModel.getCharacters(callback: () -&gt; ()) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "912">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33C6B05C-8AA0-4982-A986-F5522529A134"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "setNextpage(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "33C6B05C-8AA0-4982-A986-F5522529A134 - c09eca76261007b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMortyTvShow.HomeViewModel.setNextpage(from: Swift.String) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "127">
+               </Location>
+               <Location
+                  uuid = "33C6B05C-8AA0-4982-A986-F5522529A134 - c09eca76261007b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMortyTvShow.HomeViewModel.setNextpage(from: Swift.String) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "146">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1769C18-F5EB-4F84-BD8D-749DD6EEF03D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyTvShow/ViewModels/HomeViewModels/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getCharacters(callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76300975-5D6B-4C50-9C9F-EA1D715C5DB0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyTvShow/Network/CharactersRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getCharacters(for:callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "76300975-5D6B-4C50-9C9F-EA1D715C5DB0 - 6c5ff3fa71bba54c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMortyTvShow.CharactersRepository.getCharacters(for: Swift.Optional&lt;Swift.String&gt;, callback: (Swift.Result&lt;Swift.Optional&lt;RickAndMortyTvShow.Characters&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/Network/CharactersRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "219">
+               </Location>
+               <Location
+                  uuid = "76300975-5D6B-4C50-9C9F-EA1D715C5DB0 - 6c5ff3fa71bba54c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMortyTvShow.CharactersRepository.getCharacters(for: Swift.Optional&lt;Swift.String&gt;, callback: (Swift.Result&lt;Swift.Optional&lt;RickAndMortyTvShow.Characters&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/Network/CharactersRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "267">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA44C7AF-49A6-4829-9C46-23D7741092B0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyTvShow/Network/CharactersRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getCharacters(for:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

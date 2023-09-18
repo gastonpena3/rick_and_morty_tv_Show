@@ -26,10 +26,14 @@ struct Info: Decodable {
     }
 }
 
-struct Character: Decodable, Identifiable, Equatable {
+struct Character: Decodable, Equatable, Hashable {
     
     static func == (lhs: Character, rhs: Character) -> Bool {
         return lhs.name?.lowercased() == rhs.name?.lowercased()
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        return hasher.combine(id)
     }
     
     var id: Int

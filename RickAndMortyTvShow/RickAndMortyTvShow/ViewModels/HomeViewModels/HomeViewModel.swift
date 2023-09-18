@@ -39,6 +39,8 @@ class HomeViewModel: HomeViewModelProtocols {
                     self.setNextpage(from: characters?.info.next ?? "")
                     self.charactersList.append(contentsOf: characters?.results ?? [])
 
+                    //Avoid Duplicate Characters in List
+                    self.charactersList = self.charactersList.uniqued()
                     callback()
                 }
             case .failure(let error):
@@ -57,7 +59,7 @@ class HomeViewModel: HomeViewModelProtocols {
         let newURLValue = Int(url.getNumber()) ?? 0
         
         if newURLValue > currentURLValue {
-            self.characterNextPage = url
+            self.characterNextPage = "\(newURLValue)"
         }
     }
     
