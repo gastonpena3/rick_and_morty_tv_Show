@@ -9,28 +9,44 @@ import XCTest
 @testable import RickAndMortyTvShow
 
 final class RickAndMortyTvShowTests: XCTestCase {
+    
+    var homeViewModel: HomeViewModel!
+    var detailsViewModel: DetailsViewModel!
+    var character: Character!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        homeViewModel = HomeViewModel(repository: CharactersRepositoryMock(), errorView: ErrorViewModel())
+        detailsViewModel = DetailsViewModel(repository: CharactersRepositoryMock(), errorView: ErrorViewModel())
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        homeViewModel = nil
+        detailsViewModel = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func test_GetCharacters() {
+        homeViewModel.getCharacters { [weak self] in
+            XCTAssertTrue(self?.homeViewModel.charactersList.count == 20)
         }
+    }
+    
+    func test_GetCharacterDataForID() {
+        detailsViewModel.getData(for: 1, with: false) { [weak self] in
+            XCTAssertNotNil(self?.detailsViewModel.dataSource)
+            XCTAssertTrue(self?.detailsViewModel.dataSource?.first?.value == "Rick Sanchez")
+        }
+    }
+    
+    func test_GetCharacterLocationForID() {
+        detailsViewModel.getData(for: 1, with: true) { [weak self] in
+            XCTAssertNotNil(self?.detailsViewModel.dataSource)
+            XCTAssertTrue(self?.detailsViewModel.dataSource?.first?.value == "Citadel of Ricks")
+        }
+    }
+    
+    func test_SetNextPage() {
+        homeViewModel.setNextpage(from: "https://rickandmortyapi.com/api/character?page=3")
+        XCTAssertTrue(homeViewModel.characterNextPage == "3")
     }
 
 }

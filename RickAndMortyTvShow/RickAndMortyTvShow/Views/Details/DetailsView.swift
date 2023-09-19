@@ -34,8 +34,16 @@ struct DetailsView<DetailsViewModel>: View where DetailsViewModel : DetailsViewM
             .onAppear{
                 viewModel.isLoading = true
                 viewModel.getData(for: self.characterId ?? 0, with: getLocation ?? false) {
-                    viewModel.isLoading = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        viewModel.isLoading = false
+                    }
                 }
+            }
+            .onDisappear() {
+                viewModel.isLoading = false
+            }
+            .alert(viewModel.errorView.errorMessage, isPresented: $viewModel.errorView.showErrorAlert) {
+                Button("OK", role: .cancel) { }
             }
         }
     }

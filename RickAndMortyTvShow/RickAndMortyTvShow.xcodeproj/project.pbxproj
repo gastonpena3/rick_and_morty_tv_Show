@@ -25,6 +25,9 @@
 		D3E715272AB91201003CD586 /* ErrorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E715262AB91201003CD586 /* ErrorViewModelProtocol.swift */; };
 		D3E715292AB9120C003CD586 /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E715282AB9120C003CD586 /* ErrorViewModel.swift */; };
 		D3E7152B2AB9188A003CD586 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7152A2AB91889003CD586 /* HomeViewCell.swift */; };
+		D3E7152E2AB920C2003CD586 /* CharactersRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7152D2AB920C2003CD586 /* CharactersRepositoryMock.swift */; };
+		D3E715302AB9211C003CD586 /* APIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7152F2AB9211C003CD586 /* APIClientMock.swift */; };
+		D3E715322AB9220E003CD586 /* Characters.geojson in Resources */ = {isa = PBXBuildFile; fileRef = D3E715312AB9220E003CD586 /* Characters.geojson */; };
 		D3F9A3392AB525E2001264AC /* RickAndMortyTvShowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A3382AB525E2001264AC /* RickAndMortyTvShowApp.swift */; };
 		D3F9A33B2AB525E2001264AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A33A2AB525E2001264AC /* ContentView.swift */; };
 		D3F9A33D2AB525E4001264AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F9A33C2AB525E4001264AC /* Assets.xcassets */; };
@@ -78,6 +81,11 @@
 		D3E715262AB91201003CD586 /* ErrorViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModelProtocol.swift; sourceTree = "<group>"; };
 		D3E715282AB9120C003CD586 /* ErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
 		D3E7152A2AB91889003CD586 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		D3E7152D2AB920C2003CD586 /* CharactersRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepositoryMock.swift; sourceTree = "<group>"; };
+		D3E7152F2AB9211C003CD586 /* APIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientMock.swift; sourceTree = "<group>"; };
+		D3E715312AB9220E003CD586 /* Characters.geojson */ = {isa = PBXFileReference; explicitFileType = text.json; path = Characters.geojson; sourceTree = "<group>"; };
+		D3E715332AB9225C003CD586 /* Character.geojson */ = {isa = PBXFileReference; explicitFileType = text.json; path = Character.geojson; sourceTree = "<group>"; };
+		D3E715342AB9227A003CD586 /* Location.geojson */ = {isa = PBXFileReference; explicitFileType = text.json; path = Location.geojson; sourceTree = "<group>"; };
 		D3F9A3352AB525E2001264AC /* RickAndMortyTvShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyTvShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F9A3382AB525E2001264AC /* RickAndMortyTvShowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTvShowApp.swift; sourceTree = "<group>"; };
 		D3F9A33A2AB525E2001264AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -179,6 +187,18 @@
 				D3E715282AB9120C003CD586 /* ErrorViewModel.swift */,
 			);
 			path = ErrorViewModel;
+			sourceTree = "<group>";
+		};
+		D3E7152C2AB9209E003CD586 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D3E7152D2AB920C2003CD586 /* CharactersRepositoryMock.swift */,
+				D3E7152F2AB9211C003CD586 /* APIClientMock.swift */,
+				D3E715312AB9220E003CD586 /* Characters.geojson */,
+				D3E715332AB9225C003CD586 /* Character.geojson */,
+				D3E715342AB9227A003CD586 /* Location.geojson */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		D3F9A32C2AB525E2001264AC = {
@@ -296,6 +316,7 @@
 		D3F9A36C2AB52D3D001264AC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D3E7152C2AB9209E003CD586 /* Mocks */,
 				D3E714FC2AB77873003CD586 /* Array+Unique.swift */,
 				D3E714FE2AB77A55003CD586 /* String+GetNumber.swift */,
 				D3E7151A2AB8D170003CD586 /* Sring+DateFormatter.swift */,
@@ -413,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E715322AB9220E003CD586 /* Characters.geojson in Resources */,
 				D3F9A3402AB525E4001264AC /* Preview Assets.xcassets in Resources */,
 				D3F9A33D2AB525E4001264AC /* Assets.xcassets in Resources */,
 			);
@@ -448,6 +470,7 @@
 				D3E715172AB8B01B003CD586 /* DataModel.swift in Sources */,
 				D3F9A3762AB52FBD001264AC /* CharactersRepository.swift in Sources */,
 				D3F9A3452AB525E4001264AC /* RickAndMortyTvShow.xcdatamodeld in Sources */,
+				D3E715302AB9211C003CD586 /* APIClientMock.swift in Sources */,
 				D3E7152B2AB9188A003CD586 /* HomeViewCell.swift in Sources */,
 				D3E715022AB77BCE003CD586 /* LoadingView.swift in Sources */,
 				D3F9A33B2AB525E2001264AC /* ContentView.swift in Sources */,
@@ -456,6 +479,7 @@
 				D3E715192AB8B22F003CD586 /* GenericCellView.swift in Sources */,
 				D3E714FD2AB77873003CD586 /* Array+Unique.swift in Sources */,
 				D3E714FB2AB776C6003CD586 /* HomeViewModelProtocols.swift in Sources */,
+				D3E7152E2AB920C2003CD586 /* CharactersRepositoryMock.swift in Sources */,
 				D3F9A3782AB53043001264AC /* Character.swift in Sources */,
 				D3F9A3392AB525E2001264AC /* RickAndMortyTvShowApp.swift in Sources */,
 				D3E715292AB9120C003CD586 /* ErrorViewModel.swift in Sources */,
