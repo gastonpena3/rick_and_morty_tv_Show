@@ -18,7 +18,6 @@
 		D3E7150F2AB892E3003CD586 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7150E2AB892E3003CD586 /* DetailsView.swift */; };
 		D3E715112AB89514003CD586 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E715102AB89514003CD586 /* DetailsViewModel.swift */; };
 		D3E715132AB8952A003CD586 /* DetailsViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E715122AB8952A003CD586 /* DetailsViewModelProtocols.swift */; };
-		D3E715152AB89AE9003CD586 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E715142AB89AE9003CD586 /* LikeButton.swift */; };
 		D3E715172AB8B01B003CD586 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E715162AB8B01B003CD586 /* DataModel.swift */; };
 		D3E715192AB8B22F003CD586 /* GenericCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E715182AB8B22F003CD586 /* GenericCellView.swift */; };
 		D3E7151B2AB8D170003CD586 /* Sring+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7151A2AB8D170003CD586 /* Sring+DateFormatter.swift */; };
@@ -74,7 +73,6 @@
 		D3E7150E2AB892E3003CD586 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		D3E715102AB89514003CD586 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		D3E715122AB8952A003CD586 /* DetailsViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelProtocols.swift; sourceTree = "<group>"; };
-		D3E715142AB89AE9003CD586 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		D3E715162AB8B01B003CD586 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		D3E715182AB8B22F003CD586 /* GenericCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCellView.swift; sourceTree = "<group>"; };
 		D3E7151A2AB8D170003CD586 /* Sring+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sring+DateFormatter.swift"; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				D3E715012AB77BCE003CD586 /* LoadingView.swift */,
 				D3E715032AB77BF2003CD586 /* ActivityIndicatorView.swift */,
 				D3E715082AB7B21F003CD586 /* ImageLoader.swift */,
-				D3E715142AB89AE9003CD586 /* LikeButton.swift */,
 				D3E715182AB8B22F003CD586 /* GenericCellView.swift */,
 			);
 			path = Views;
@@ -487,7 +484,6 @@
 				D3E715132AB8952A003CD586 /* DetailsViewModelProtocols.swift in Sources */,
 				D3E715092AB7B21F003CD586 /* ImageLoader.swift in Sources */,
 				D3E715272AB91201003CD586 /* ErrorViewModelProtocol.swift in Sources */,
-				D3E715152AB89AE9003CD586 /* LikeButton.swift in Sources */,
 				D3E714F92AB64D55003CD586 /* Location.swift in Sources */,
 				D3F9A3702AB52F02001264AC /* APIClient.swift in Sources */,
 				D3E715042AB77BF2003CD586 /* ActivityIndicatorView.swift in Sources */,

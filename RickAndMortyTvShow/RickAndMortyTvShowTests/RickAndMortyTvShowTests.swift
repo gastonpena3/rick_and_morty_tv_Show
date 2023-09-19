@@ -26,21 +26,27 @@ final class RickAndMortyTvShowTests: XCTestCase {
 
     func test_GetCharacters() {
         homeViewModel.getCharacters { [weak self] in
-            XCTAssertTrue(self?.homeViewModel.charactersList.count == 20)
+            DispatchQueue.main.async {
+                XCTAssertTrue(self?.homeViewModel.charactersList.count == 20)
+            }
         }
     }
     
     func test_GetCharacterDataForID() {
         detailsViewModel.getData(for: 1, with: false) { [weak self] in
-            XCTAssertNotNil(self?.detailsViewModel.dataSource)
-            XCTAssertTrue(self?.detailsViewModel.dataSource?.first?.value == "Rick Sanchez")
+            DispatchQueue.main.async {
+                XCTAssertNotNil(self?.detailsViewModel.dataSource)
+                XCTAssertTrue(self?.detailsViewModel.dataSource?.first?.value == "Rick Sanchez")
+            }
         }
     }
     
     func test_GetCharacterLocationForID() {
         detailsViewModel.getData(for: 1, with: true) { [weak self] in
-            XCTAssertNotNil(self?.detailsViewModel.dataSource)
-            XCTAssertTrue(self?.detailsViewModel.dataSource?.first?.value == "Citadel of Ricks")
+            DispatchQueue.main.async {
+                XCTAssertNotNil(self?.detailsViewModel.dataSource)
+                XCTAssertTrue(self?.detailsViewModel.dataSource?.first?.value == "Citadel of Ricks")
+            }
         }
     }
     
