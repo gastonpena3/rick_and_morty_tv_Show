@@ -29,7 +29,7 @@ struct Info: Decodable {
 struct Character: Decodable, Equatable, Hashable {
     
     static func == (lhs: Character, rhs: Character) -> Bool {
-        return lhs.name?.lowercased() == rhs.name?.lowercased()
+        return lhs.id == rhs.id
     }
     
     public func hash(into hasher: inout Hasher) {
@@ -49,7 +49,7 @@ struct Character: Decodable, Equatable, Hashable {
     var created: String?
     
     func toData() -> [DataModel] {
-        return [DataModel(key: "Name", value: self.name), DataModel(key:"Status", value: self.status), DataModel(key:"Species", value: self.species), DataModel(key:"Gender", value: self.gender), DataModel(key:"Origin", value: self.origin?.name), DataModel(key:"Location", value: self.location?.name, isUserInteracionEnable: true), DataModel(key:"Episodes", value: "\(self.episode?.count ?? 0)"), DataModel(key:"Created", value: self.created?.formattedDate())]
+        return [DataModel(key: "Name", value: self.name), DataModel(key:"Status", value: self.status), DataModel(key:"Species", value: self.species), DataModel(key:"Gender", value: self.gender), DataModel(key:"Origin", value: self.origin?.name), DataModel(key:"Last Location", value: self.location?.name, isUserInteracionEnable: true), DataModel(key:"Episodes", value: "\(self.episode?.count ?? 0)"), DataModel(key:"Created", value: self.created?.formattedDate())]
         
     }
 }

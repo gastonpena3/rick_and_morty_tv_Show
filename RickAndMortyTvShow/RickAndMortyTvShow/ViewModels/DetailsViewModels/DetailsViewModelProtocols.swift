@@ -11,6 +11,7 @@ protocol DetailsViewModelProtocols: ObservableObject {
     var repository: CharactersRepositoryProtocols { get set }
     var errorView: any ErrorViewModelProtocol { get set }
     var dataSource: [DataModel]? { get set }
+    var character: Character? { get set }
     var isLoading: Bool  { get set }
     var isLiked: Bool { get set }
     

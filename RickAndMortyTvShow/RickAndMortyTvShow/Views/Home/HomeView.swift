@@ -18,49 +18,47 @@ struct HomeView<HomeViewModel>: View where HomeViewModel : HomeViewModelProtocol
     var body: some View {
         NavigationStack {
             LoadingView(isShowing: $homeViewModel.isLoading) {
-                VStack {
-                    List {
-                        ForEach(Array(homeViewModel.charactersList.enumerated()), id: \.offset) { index, character in
-                            Button(action: {
-                                homeViewModel.selectedCharacter = character
-                                homeViewModel.goToDetailsView = true
-                            }, label: {
-                                HomeViewCell(character: character)
-                            })
-
-                            .onAppear() {
-                                if (homeViewModel.charactersList.last == character) {
-                                    homeViewModel.isLoadingMoreCharcaters = true
-                                    homeViewModel.isScrolling = true
-                                    
-                                    self.homeViewModel.getCharacters {
-                                        DispatchQueue.main.async {
-                                            homeViewModel.isScrolling = false
-                                            homeViewModel.isLoadingMoreCharcaters = false
-                                        }
+                List {
+                    ForEach(Array(homeViewModel.charactersList.enumerated()), id: \.offset) { index, character in
+                        Button(action: {
+                            homeViewModel.selectedCharacter = character
+                            homeViewModel.goToDetailsView = true
+                        }, label: {
+                            HomeViewCell(character: character)
+                        })
+                        
+                        .onAppear() {
+                            if (homeViewModel.charactersList.last == character) {
+                                homeViewModel.isLoadingMoreCharcaters = true
+                                homeViewModel.isScrolling = true
+                                
+                                self.homeViewModel.getCharacters {
+                                    DispatchQueue.main.async {
+                                        homeViewModel.isScrolling = false
+                                        homeViewModel.isLoadingMoreCharcaters = false
                                     }
                                 }
                             }
                         }
-                        
-                        if homeViewModel.isLoadingMoreCharcaters {
-                            HStack(alignment: .center) {
-                                Spacer()
-                                
-                                ProgressView()
-                                    .foregroundColor(.secondary)
-                                
-                                Spacer()
-                            }
-                            .frame(height: 50)
-                        }
                     }
-                    .frame( maxWidth: .infinity)
-                    .listStyle(GroupedListStyle())
-                    .navigationDestination(isPresented: $homeViewModel.goToDetailsView) {
-                        if let character = homeViewModel.selectedCharacter {
-                            goToDetails(with: character)
+                    
+                    if homeViewModel.isLoadingMoreCharcaters {
+                        HStack(alignment: .center) {
+                            Spacer()
+                            
+                            ProgressView()
+                                .foregroundColor(.secondary)
+                            
+                            Spacer()
                         }
+                        .frame(height: 50)
+                    }
+                }
+                .frame( maxWidth: .infinity)
+                .listStyle(GroupedListStyle())
+                .navigationDestination(isPresented: $homeViewModel.goToDetailsView) {
+                    if let character = homeViewModel.selectedCharacter {
+                        goToDetails(with: character)
                     }
                 }
                 .navigationBarTitle("Rick & Morty", displayMode: .large)

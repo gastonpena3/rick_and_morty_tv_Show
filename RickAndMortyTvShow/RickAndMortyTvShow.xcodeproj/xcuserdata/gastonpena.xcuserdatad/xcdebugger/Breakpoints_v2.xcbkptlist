@@ -7,17 +7,97 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B077D6AF-8FD4-4805-A43A-332D9E3BA00A"
+            uuid = "62D6B156-A79B-4E7D-A9A5-5952F617FDEB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RickAndMortyTvShow/ViewModels/DetailsViewModels/DetailsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "getCharacter(for:callback:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "62D6B156-A79B-4E7D-A9A5-5952F617FDEB - fc24c341b192d150"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMortyTvShow.DetailsViewModel.getCharacter(for: Swift.Int, callback: () -&gt; ()) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/ViewModels/DetailsViewModels/DetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  uuid = "62D6B156-A79B-4E7D-A9A5-5952F617FDEB - a14fb8b8dbd70753"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;RickAndMortyTvShow.Character&gt;, Swift.Error&gt;) -&gt; () in RickAndMortyTvShow.DetailsViewModel.getCharacter(for: Swift.Int, callback: () -&gt; ()) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/ViewModels/DetailsViewModels/DetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "273">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D4BD896-7220-4BB6-AB3D-3209DFAC6B00"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyTvShow/ViewModels/DetailsViewModels/DetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "getLocation(for:callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D4BD896-7220-4BB6-AB3D-3209DFAC6B00 - 971bdb5c211e8e43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMortyTvShow.DetailsViewModel.getLocation(for: Swift.Int, callback: () -&gt; ()) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/ViewModels/DetailsViewModels/DetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  uuid = "1D4BD896-7220-4BB6-AB3D-3209DFAC6B00 - 7a7def7a2f7041a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;RickAndMortyTvShow.Location&gt;, Swift.Error&gt;) -&gt; () in RickAndMortyTvShow.DetailsViewModel.getLocation(for: Swift.Int, callback: () -&gt; ()) -&gt; ()"
+                  moduleName = "RickAndMortyTvShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gastonpena/Desktop/GASTI/GASTON%20VARIOS/CLOUDX/rick_and_morty_tv_Show/RickAndMortyTvShow/RickAndMortyTvShow/ViewModels/DetailsViewModels/DetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "273">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

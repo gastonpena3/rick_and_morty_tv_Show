@@ -23,7 +23,7 @@ struct GenericCellView: View {
                     
                     if let description = description {
                         Text(description)
-                            .foregroundColor(Color.primary)
+                            .foregroundColor(Color.secondary)
                     }
                 }
         }

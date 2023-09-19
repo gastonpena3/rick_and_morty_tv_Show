@@ -13,6 +13,7 @@ class DetailsViewModel: DetailsViewModelProtocols {
     internal var errorView: any ErrorViewModelProtocol
     
     @Published var dataSource: [DataModel]?
+    @Published var character: Character?
     @Published var isLiked = false
     @Published var isLoading = true
     
@@ -23,7 +24,7 @@ class DetailsViewModel: DetailsViewModelProtocols {
     
     func getData(for id: Int, with location: Bool, callback: @escaping () -> ()) {
         if location {
-            self.getLocation(for: id) {
+            self.getLocation(for: getLocationID()) {
                 callback()
             }
         } else {
@@ -39,7 +40,7 @@ class DetailsViewModel: DetailsViewModelProtocols {
             case .success(let character):
                 DispatchQueue.main.async {
                     self.dataSource = character?.toData()
-
+                    self.character = character
                     callback()
                 }
             case .failure(let error):
@@ -67,6 +68,9 @@ class DetailsViewModel: DetailsViewModelProtocols {
                 callback()
             }
         }
-            
+    }
+    
+    func getLocationID() -> Int {
+        return Int(character?.location?.url?.getNumber() ?? "0") ?? 0
     }
 }

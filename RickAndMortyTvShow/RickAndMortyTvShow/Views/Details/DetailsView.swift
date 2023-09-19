@@ -9,25 +9,33 @@ import SwiftUI
 
 struct DetailsView<DetailsViewModel>: View where DetailsViewModel : DetailsViewModelProtocols {
     
-    let characterId: Int?
-    let getLocation: Bool?
+    var characterId: Int?
+    var getLocation: Bool?
+    var showCharacterImage: Bool = true
     
     @StateObject var viewModel: DetailsViewModel
     
     init(characterId: Int, getLocation: Bool = false, viewModel: DetailsViewModel) {
         self.characterId = characterId
         self.getLocation = getLocation
+        self.showCharacterImage = !getLocation
         self._viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
         NavigationStack {
             LoadingView(isShowing: $viewModel.isLoading) {
-                VStack {
-                    List {
-                        ForEach(viewModel.dataSource ?? []) { data in
-                            getCellFor(data: data)
-                        }
+                List {
+                    
+                    if showCharacterImage {
+                        ImageLoader.share.setTvShowPoster(imageURL: viewModel.character?.image ?? "")
+                            .cornerRadius(20)
+                            .padding(.vertical, 5)
+                            .shadow(radius: 5)
+                    }
+
+                    ForEach(viewModel.dataSource ?? []) { data in
+                        getCellFor(data: data)
                     }
                 }
             }
@@ -46,6 +54,7 @@ struct DetailsView<DetailsViewModel>: View where DetailsViewModel : DetailsViewM
                 Button("OK", role: .cancel) { }
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
     
     @ViewBuilder func getCellFor(data: DataModel) -> some View {

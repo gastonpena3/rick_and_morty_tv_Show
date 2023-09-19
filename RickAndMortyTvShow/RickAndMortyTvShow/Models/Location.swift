@@ -16,7 +16,7 @@ struct Location: Decodable {
     
     
     func toData() -> [DataModel] {
-        return [DataModel(key: "Name", value: self.name), DataModel(key:"Type", value: self.type), DataModel(key:"Dimension", value: self.dimension), DataModel(key:"Residents", value: "\(self.residents?.count ?? 0)")]
+        return [DataModel(key: "Name", value: self.name ?? "-"), DataModel(key:"Type", value: self.type ?? "-"), DataModel(key:"Dimension", value: self.dimension  ?? "-"), DataModel(key:"Residents", value: "\(self.residents?.count ?? 0)")]
     }
 }
 
