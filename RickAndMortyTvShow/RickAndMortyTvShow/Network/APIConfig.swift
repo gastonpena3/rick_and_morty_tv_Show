@@ -8,7 +8,5 @@
 import Foundation
 
 struct APIConfig {
-
     let baseURL = "https://rickandmortyapi.com/api/"
-    
 }

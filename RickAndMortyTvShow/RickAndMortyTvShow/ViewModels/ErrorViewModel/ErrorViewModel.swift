@@ -13,7 +13,6 @@ class ErrorViewModel: ErrorViewModelProtocol {
     @Published var errorMessage: String = "Error"
     
     func showAPIError(with title: String) {
-        
         self.showErrorAlert = true
         self.errorMessage = title
     }

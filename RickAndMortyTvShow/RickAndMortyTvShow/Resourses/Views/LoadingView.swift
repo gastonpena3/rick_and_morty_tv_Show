@@ -13,7 +13,6 @@ struct LoadingView<Content>: View where Content: View {
     var content: () -> Content
     
     var body: some View {
-        
         GeometryReader { geometry in
             ZStack(alignment: .center) {
                 self.content()

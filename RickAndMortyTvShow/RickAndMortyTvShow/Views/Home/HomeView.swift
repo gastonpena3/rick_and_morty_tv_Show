@@ -75,16 +75,14 @@ struct HomeView<HomeViewModel>: View where HomeViewModel : HomeViewModelProtocol
                 homeViewModel.isLoading = false
             }
             .alert(homeViewModel.errorView.errorMessage, isPresented: $homeViewModel.errorView.showErrorAlert) {
-                
                 Button("OK", role: .cancel) { }
-                
             }
         }
     }
     
     func goToDetails(with character: Character) -> DetailsView<DetailsViewModel> {
-        let viewModel = DetailsViewModel(repository: CharactersRepository(), errorView: ErrorViewModel())
-        return DetailsView(characterId: homeViewModel.selectedCharacter?.id ?? 0, viewModel: viewModel)
+        let viewModel = DetailsViewModel(repository: CharactersRepository(), errorView: ErrorViewModel(), characterId: homeViewModel.selectedCharacter?.id ?? 0)
+        return DetailsView(viewModel: viewModel)
     }
 }
 

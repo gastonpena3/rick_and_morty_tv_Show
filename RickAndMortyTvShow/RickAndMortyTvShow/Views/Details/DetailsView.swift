@@ -8,15 +8,13 @@
 import SwiftUI
 
 struct DetailsView<DetailsViewModel>: View where DetailsViewModel : DetailsViewModelProtocols {
-    
-    var characterId: Int?
+
     var getLocation: Bool?
     var showCharacterImage: Bool = true
     
     @StateObject var viewModel: DetailsViewModel
     
-    init(characterId: Int, getLocation: Bool = false, viewModel: DetailsViewModel) {
-        self.characterId = characterId
+    init(getLocation: Bool = false, viewModel: DetailsViewModel) {
         self.getLocation = getLocation
         self.showCharacterImage = !getLocation
         self._viewModel = StateObject(wrappedValue: viewModel)
@@ -26,7 +24,6 @@ struct DetailsView<DetailsViewModel>: View where DetailsViewModel : DetailsViewM
         NavigationStack {
             LoadingView(isShowing: $viewModel.isLoading) {
                 List {
-                    
                     if showCharacterImage {
                         ImageLoader.share.setTvShowPoster(imageURL: viewModel.character?.image ?? "")
                             .cornerRadius(20)
@@ -41,7 +38,7 @@ struct DetailsView<DetailsViewModel>: View where DetailsViewModel : DetailsViewM
             }
             .onAppear{
                 viewModel.isLoading = true
-                viewModel.getData(for: self.characterId ?? 0, with: getLocation ?? false) {
+                viewModel.getData(for: viewModel.characterId, with: getLocation ?? false) {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         viewModel.isLoading = false
                     }
@@ -60,7 +57,7 @@ struct DetailsView<DetailsViewModel>: View where DetailsViewModel : DetailsViewM
     @ViewBuilder func getCellFor(data: DataModel) -> some View {
         if data.isUserInteracionEnable ?? false {
             VStack {
-                NavigationLink(destination: DetailsView(characterId: self.characterId ?? 0, getLocation: true, viewModel: self.viewModel)) {
+                NavigationLink(destination: DetailsView(getLocation: true, viewModel: self.viewModel)) {
                     GenericCellView(title: data.key, description: data.value)
                 }
             }
@@ -75,6 +72,6 @@ struct DetailsView<DetailsViewModel>: View where DetailsViewModel : DetailsViewM
 struct CharacterDetailsView_Previews: PreviewProvider {
     
     static var previews: some View {
-        DetailsView(characterId: 0, viewModel: DetailsViewModel(repository: CharactersRepository(), errorView: ErrorViewModel()))
+        DetailsView(viewModel: DetailsViewModel(repository: CharactersRepository(), errorView: ErrorViewModel(), characterId: 1))
     }
 }

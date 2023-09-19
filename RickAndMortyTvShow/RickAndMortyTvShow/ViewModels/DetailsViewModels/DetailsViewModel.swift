@@ -12,14 +12,16 @@ class DetailsViewModel: DetailsViewModelProtocols {
     internal var repository: CharactersRepositoryProtocols
     internal var errorView: any ErrorViewModelProtocol
     
+    @Published var characterId: Int
     @Published var dataSource: [DataModel]?
     @Published var character: Character?
     @Published var isLiked = false
     @Published var isLoading = true
     
-    init(repository: CharactersRepositoryProtocols, errorView: any ErrorViewModelProtocol) {
+    init(repository: CharactersRepositoryProtocols, errorView: any ErrorViewModelProtocol, characterId: Int) {
         self.repository = repository
         self.errorView = errorView
+        self.characterId = characterId
     }
     
     func getData(for id: Int, with location: Bool, callback: @escaping () -> ()) {

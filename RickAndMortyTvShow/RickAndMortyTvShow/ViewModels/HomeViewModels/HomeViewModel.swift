@@ -24,7 +24,6 @@ class HomeViewModel: HomeViewModelProtocols {
     init(repository: CharactersRepositoryProtocols, errorView: any ErrorViewModelProtocol) {
         self.repository = repository
         self.errorView = errorView
-        
     }
     
     func getCharacters(callback: @escaping () -> ()) {
@@ -52,9 +51,7 @@ class HomeViewModel: HomeViewModelProtocols {
                 
                 callback()
             }
-            
         }
-        
     }
 
     func setNextpage(from url: String) {
